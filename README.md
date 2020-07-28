@@ -12,7 +12,7 @@ In this  quiz code project, I have developed an apllication for taking timed qui
 ![code quiz](image/initial.png)
 
 4. Finally the score is recorded in descending order where the highst score is desplayed at the top.
-![code quiz](image/highscore.png)
+![code quiz](image/highscore.png)  
 
-
+# The URL of the functional aplication
 https://bbeyenene.github.io/Code-Quize/

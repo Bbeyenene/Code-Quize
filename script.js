@@ -44,8 +44,8 @@ function myQuiz() {
     var checkAnswerPara = document.querySelector('#outcomeDisplay');
     var currentQuestion = 0;
     var time = 0;
-    const timePerQuestion = 12;
-    const timeTotal = (12 * myQuestions.length);
+    const timePerQuestion = 15;
+    const timeTotal = (15 * myQuestions.length);
     
     function firstPageButtonsClick() {
         //start btn click clears the front page container to be replaced by questions and start timer
