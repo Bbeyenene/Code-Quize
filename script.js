@@ -196,13 +196,6 @@ function myQuiz() {
         });
     }  
     function highscoreRecord(highscores) {
-        //this function store and desplay high score  and creates an exit and clear score buttons.
-        if (localStorage.getItem('localHighschores')) {
-           highscores = localStorage.getItem('localHighschores');
-           highscores = JSON.parse(highscores);
-        } else {
-         highscore = [];
-        }
         document.body.innerHTML = "";
         
         var highscoreContainerDiv = document.createElement('div');
