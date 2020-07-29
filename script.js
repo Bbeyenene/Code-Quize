@@ -68,6 +68,7 @@ function myQuiz() {
         //highscore record btn click takes you to the score records.
         highScorebtn.addEventListener("click", function(){
             highscoreRecord();
+            
         }); 
     }  
     function generateRowCol(rows, questionContent) {
@@ -195,8 +196,16 @@ function myQuiz() {
             highscoreRecord(highscores);
         });
     }  
+
     function highscoreRecord(highscores) {
         document.body.innerHTML = "";
+        var highscores = [];
+        if(localStorage.getItem('localHighschores')) {
+            highscores = localStorage.getItem('localHighschores');
+            highscores = JSON.parse(highscores); 
+        } else {
+            highscores =[];
+        }
         
         var highscoreContainerDiv = document.createElement('div');
         highscoreContainerDiv.setAttribute('class', 'container');        
