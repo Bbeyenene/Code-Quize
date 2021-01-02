@@ -1,45 +1,62 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Code</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar bg-dark">
-        <button class=" navButton text-light btn bttn-secondary" id="view-highscore-btn">High Score Record</button>
-        <h5 class=" navTimer text-light">Timer  <span class="text-light " id="time-display">0:00</span>s</h5>
+    <nav class="navbar bg-gray">
+        <button class=" navButton text-light btn bttn-gray" id="view-highscore-btn">High Score Record</button>
+        <h5 class=" navTimer text-light">Timer <span class="text-light " id="time-display">0:00</span>s</h5>
     </nav>
-    <div class="container m-5 mx-auto" id="main-container">
-        <div class="row m-2">
-            <div class="col text-center">
-                <div class="display-1">The Coding Quiz</div>
-                <p>
-                   Choose the correct answer from the given choices.
-                   There are five questions and a total of 75 seconds that is 15sec/questions. The total 
-                   score is the sum of the time each correct answer is answered.  
-                </p>
-                <div class="display-1">Good Luck!</div>
-
+    <div class="tiltle">
+        <p class="infoN"><strong>Background image:</strong> Image of the day from NASA api</p>
+    </div>
+    <div id="mydiv">
+        <div class="personal" id="main-container">
+            <svg class="svginfo" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrows-move"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z" />
+            </svg>
+            Draggable Page
+            <div class="container m-5 mx-auto" id="main-container">
+                <div class="row m-2">
+                    <div class="col text-center">
+                        <div class="display-1">The Coding Quiz</div>
+                        <p>
+                            Choose the correct answer from the given choices.
+                            There are five questions and a total of 75 seconds that is 15sec/questions. The total
+                            score is the sum of the time each correct answer is answered.
+                        </p>
+                        <div class="display-1">Good Luck!</div>
+                    </div>
+                </div>
+                <div class="row m-2">
+                    <div class="col text-center">
+                        <button class="btn btn-primary btn-lg" id="start-btn">Start Quiz</button>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <div class="row m-2">
-            <div class="col text-center">
-                <button class="btn btn-primary btn-lg" id="start-btn">Start Quiz</button>
+        <div class="container">
+            <div class="row m-2">
+                <div class="col">
+                    <p id="outcomeDisplay"></p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container light">
-        <div class="row m-2">
-            <div class="col">
-                <p id="outcomeDisplay"></p>
-            </div>
-        </div>
-    </div>
-  
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
-  
 </body>
+
 </html>
